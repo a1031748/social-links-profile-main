@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+//font------------------------------------------
+
+@mixin font($color, $size, $weight) {
+    font-family: "Inter", sans-serif;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+;
+
+//color-------------------------------------------
+
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$Dark_Grey: hsl(0, 0%, 12%);
+$Off_Black: hsl(0, 0%, 8%);
+
+
+
+//-------------------------------------------------
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $Off_Black;
+    width: 100%;
+    height: 100%;
+
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    //background-color: yellow;
+    position: relative;
+
+    .container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 350px;
+        height: 550px;
+        background-color: $Dark_Grey;
+        border: 1px solid white;
+        display: flex;
+        border-radius: 8px;
+        width: 100%;
+
+        .section_1 {
+            margin: 0 auto;
+            .img {
+                //background-color: pink;
+                padding: 15px 0 0px 0;
+                width: 100%;
+                
+                .img_inner {
+                    width: 100px;
+                    height: 100px;
+                    background-image: url('./assets/images/avatar-jessica.jpeg');
+                    background-size: contain;
+                    background-position: center;
+                    border-radius: 100%;
+                    display: flex;
+                    margin: auto;
+                }
+
+            }
+
+            .description {
+                
+                text-align: center;
+                //background-color: yellow;
+                .txt {
+                    
+                    h1 {
+                        @include font($White, 25px, 600);
+                    }
+
+                    h4 {
+                        margin-top: -8px;
+                        @include font($Green, 15px, 400);
+
+                    }
+                }
+
+                h5 {
+                    @include font($White, 15px, 200);
+                    margin-top: -1px;
+                }
+            }
+            .button{
+                .item{
+                    text-align: center;
+                    width: 300px;
+                    background-color: $Grey;
+                    margin-top: 10px;
+                    @include font($White, 13px, 600);
+                    //padding: 10px 20px;
+                    line-height: 45px;
+                    margin-top: 12px;
+                    border-radius: 10px;
+
+
+                }
+                .item:hover{
+                    background-color: $Green;
+                    color: $Off_Black;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 8%);
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+.wrap .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 350px;
+  height: 550px;
+  background-color: hsl(0, 0%, 12%);
+  border: 1px solid white;
+  display: flex;
+  border-radius: 8px;
+  width: 100%;
+}
+.wrap .container .section_1 {
+  margin: 0 auto;
+}
+.wrap .container .section_1 .img {
+  padding: 15px 0 0px 0;
+  width: 100%;
+}
+.wrap .container .section_1 .img .img_inner {
+  width: 100px;
+  height: 100px;
+  background-image: url("./assets/images/avatar-jessica.jpeg");
+  background-size: contain;
+  background-position: center;
+  border-radius: 100%;
+  display: flex;
+  margin: auto;
+}
+.wrap .container .section_1 .description {
+  text-align: center;
+}
+.wrap .container .section_1 .description .txt h1 {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+  font-weight: 600;
+}
+.wrap .container .section_1 .description .txt h4 {
+  margin-top: -8px;
+  font-family: "Inter", sans-serif;
+  color: hsl(75, 94%, 57%);
+  font-size: 15px;
+  font-weight: 400;
+}
+.wrap .container .section_1 .description h5 {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: -1px;
+}
+.wrap .container .section_1 .button .item {
+  text-align: center;
+  width: 300px;
+  background-color: hsl(0, 0%, 20%);
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 45px;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+.wrap .container .section_1 .button .item:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
